@@ -13,7 +13,7 @@ function OrchidCard({orchid}) {
             <Modal show={show} onHide={() => setShow(false)} centered> <Modal.Header closeButton>
                 <Modal.Title>{orchid.orchidName}</Modal.Title> </Modal.Header> <Modal.Body> <img src={orchid.image}
                                                                                                  alt={orchid.orchidName}
-                                                                                                 className="img-fluid rounded mb-3"/>
+                                                                                                 className="img-fluid rounded mb-3 orchid-image"/>
                 <p><strong>Category:</strong> {orchid.category}</p> {orchid.origin &&
                     <p><strong>Origin:</strong> {orchid.origin}</p>} {orchid.color &&
                     <p><strong>Color:</strong> {orchid.color}</p>} {orchid.rating !== undefined && (
